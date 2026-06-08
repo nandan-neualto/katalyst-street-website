@@ -9,7 +9,7 @@ export function initFooter() {
     <div class="container footer-grid">
       <div class="footer-brand">
         <div class="logo">
-          <img src="/images/brand/katalyst_street_icon_white.png" alt="Katalyst Street Icon" class="logo-icon">
+          <img src="images/brand/katalyst_street_icon_white.png" alt="Katalyst Street Icon" class="logo-icon">
           <span class="logo-text">Katalyst <span class="accent-text">Street</span></span>
         </div>
         <p class="footer-tagline">Taming IT Complexity. Building the AI Future.</p>

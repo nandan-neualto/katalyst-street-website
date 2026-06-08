@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: 'https://www.katalyststreet.com/',
+  base: './',
   build: {
     rollupOptions: {
       input: {

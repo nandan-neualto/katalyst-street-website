@@ -10,7 +10,7 @@ export function initNavigation() {
   navbar.innerHTML = `
     <div class="nav-container">
       <a href="${isHome ? '#home' : './index.html#home'}" class="logo">
-        <img src="/images/brand/katalyst_street_icon_brand.png" alt="Katalyst Street Icon" class="logo-icon">
+        <img src="images/brand/katalyst_street_icon_brand.png" alt="Katalyst Street Icon" class="logo-icon">
         <span class="logo-text">Katalyst <span class="accent-text">Street</span></span>
       </a>
 
