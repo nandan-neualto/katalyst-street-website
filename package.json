@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.2.0"
+    "@sanity/client": "^7.22.1",
+    "dotenv": "^16.4.5",
+    "vite": "^5.2.0",
+    "xml2js": "^0.6.2"
   }
 }

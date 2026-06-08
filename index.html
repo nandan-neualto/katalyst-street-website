@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Core CSS -->
-  <link rel="stylesheet" href="./index.css">
+  <!-- Core CSS Bundle -->
+  <link rel="stylesheet" href="./styles/home-entry.css">
 </head>
 <body>
 
@@ -24,46 +24,8 @@
   <div class="glow-bg glow-bg-2"></div>
   <div class="glow-bg glow-bg-3"></div>
 
-  <!-- Navigation Bar -->
-  <header class="navbar" id="main-nav">
-    <div class="nav-container">
-      <a href="#home" class="logo">
-        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="url(#logo-grad-1)"/>
-          <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="url(#logo-grad-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <defs>
-            <linearGradient id="logo-grad-1" x1="2" y1="2" x2="22" y2="12" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#4F46E5"/>
-              <stop offset="100%" stop-color="#06B6D4"/>
-            </linearGradient>
-            <linearGradient id="logo-grad-2" x1="2" y1="12" x2="22" y2="22" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#4F46E5"/>
-              <stop offset="100%" stop-color="#0D9488"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <span class="logo-text">Katalyst <span class="accent-text">Street</span></span>
-      </a>
-
-      <!-- Desktop Links -->
-      <nav class="nav-menu">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#services" class="nav-link">What We Do</a>
-        <a href="#solutions" class="nav-link">Solutions</a>
-        <a href="#approach" class="nav-link">Our Approach</a>
-        <a href="#customers" class="nav-link">Customers</a>
-        <a href="#insights" class="nav-link">Insights</a>
-        <a href="#contact" class="nav-link contact-btn">Get in Touch</a>
-      </nav>
-
-      <!-- Mobile Hamburger Button -->
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+  <!-- Navigation Bar (Populated via JS) -->
+  <header class="navbar" id="main-nav"></header>
 
   <!-- Main Content Layout -->
   <main id="site-root">
@@ -84,94 +46,193 @@
             We are a boutique management consulting and strategic advisory firm helping CEOs, CMOs, and CFOs implement <strong>actionable roadmaps</strong> for high-performance Artificial Intelligence (AI) and enterprise data initiatives.
           </p>
           <div class="hero-ctas fade-in-up">
-            <a href="#services" class="btn btn-primary">
-              Explore Our Services
+            <a href="#contact" class="btn btn-primary">
+              Schedule Advisory Session
               <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-            <a href="#contact" class="btn btn-secondary">Schedule Advisory Session</a>
+            <a href="./blog-post.html?slug=pid-most-important-artifact-agentic-workflows" class="btn btn-secondary">Read White Paper</a>
           </div>
         </div>
 
         <div class="hero-visual fade-in-up">
-          <div class="glass-card visual-card">
-            <div class="visual-header">
-              <span class="circle red"></span>
-              <span class="circle yellow"></span>
-              <span class="circle green"></span>
-              <span class="card-title-tab">AI Actionable Roadmap v3.2</span>
-            </div>
-            <div class="visual-body">
-              <div class="complexity-flow">
-                <div class="complexity-node node-chaos">
-                  <div class="node-icon-wrapper">🌀</div>
-                  <div class="node-label">IT Complexity & Data Silos</div>
-                  <span class="connecting-line animate-pulse"></span>
-                </div>
-                <div class="complexity-arrow">
-                  <svg viewBox="0 0 100 20" class="flow-svg">
-                    <path d="M0,10 L90,10" stroke="url(#flow-grad)" stroke-width="3" stroke-dasharray="5,5" />
-                    <polygon points="90,5 100,10 90,15" fill="#4F46E5"/>
-                    <defs>
-                      <linearGradient id="flow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#4F46E5" />
-                        <stop offset="100%" stop-color="#0D9488" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <span class="flow-badge">Katalyst Strategy</span>
-                </div>
-                <div class="complexity-node node-streamlined">
-                  <div class="node-icon-wrapper">🚀</div>
-                  <div class="node-label">AI Accelerators & DeltaMax</div>
-                </div>
-              </div>
+          <div class="glass-card visual-card beast-visual-card">
+            <img src="/images/Screenshot 2026-06-04 132255.png" alt="#TAMETHEBEAST.AI Campaign Logo" class="hero-beast-logo-img">
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <!-- Animated Metric Stats -->
-              <div class="visual-stats">
-                <div class="stat-bubble">
-                  <span class="stat-num">-60%</span>
-                  <span class="stat-lbl">IT Friction</span>
-                </div>
-                <div class="stat-bubble">
-                  <span class="stat-num">4.5x</span>
-                  <span class="stat-lbl">Data Velocity</span>
-                </div>
-                <div class="stat-bubble">
-                  <span class="stat-num">100%</span>
-                  <span class="stat-lbl">AI Readiness</span>
-                </div>
-              </div>
+    <!-- Nasdaq & Google Banners Showcase Slider -->
+    <section id="validation" class="validation-section section-padding">
+      <div class="container">
+        <div class="validation-slider-wrapper glass-card reveal-card">
+          <!-- Slider Track -->
+          <div class="validation-slider-track">
+            <!-- Slide 1: Nasdaq Billboard -->
+            <div class="validation-slide active">
+              <img src="/images/banners/nasdaq_banner.png" alt="Nasdaq Times Square Billboard" class="slider-banner-img">
+              <div class="slider-caption">Nasdaq Times Square Feature</div>
             </div>
+            
+            <!-- Slide 2: Google Cloud Partner Banner -->
+            <div class="validation-slide">
+              <img src="/images/banners/google_banner_1.png" alt="Google Cloud Marketplace Solutions" class="slider-banner-img">
+              <div class="slider-caption">Google Cloud Marketplace Solutions</div>
+            </div>
+            
+            <!-- Slide 3: Google Cloud Partner Badge -->
+            <div class="validation-slide">
+              <img src="/images/logos/Google_Cloud_Partner_outline_horizontal.png" alt="Official Google Cloud Partner" class="slider-banner-img">
+              <div class="slider-caption">Official Google Cloud Partner</div>
+            </div>
+          </div>
+          
+          <!-- Slide Navigation Controls -->
+          <button class="slider-btn prev-btn" aria-label="Previous Banner">&lsaquo;</button>
+          <button class="slider-btn next-btn" aria-label="Next Banner">&rsaquo;</button>
+          
+          <!-- Navigation Dot Indicators -->
+          <div class="validation-slider-dots">
+            <button class="validation-dot active" aria-label="Slide 1"></button>
+            <button class="validation-dot" aria-label="Slide 2"></button>
+            <button class="validation-dot" aria-label="Slide 3"></button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Partners Logo Grid -->
-    <section class="partners-section">
+    <section id="partners" class="partners-section">
       <div class="container">
         <p class="partners-lead">Authorized Strategic Partnerships & Integration Ecosystem</p>
-        <div class="partners-carousel">
-          <div class="partner-item gcp-partner">
-            <div class="partner-badge-wrapper">
-              <svg class="partner-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" fill="#4285F4"/>
-              </svg>
-              <div>
-                <span class="partner-name">Google Cloud</span>
-                <span class="partner-sub">Authorized Partner (Sell, Service, Build)</span>
+        <div class="partners-grid-layout">
+          
+          <!-- Google Cloud Services -->
+          <div class="partner-item-card gcp-services-partner reveal-card">
+            <div class="partner-card-glow-color color-gcp-services"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box gcp-box">
+                <img src="/images/logos/tier_gcp_services_select.png" alt="Google Cloud Services Partner Select" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">Google Cloud</h4>
+                <p class="partner-desc">Services Partner (Select Tier)</p>
               </div>
             </div>
           </div>
-          <div class="partner-item">
-            <span class="logo-dummy snowflake-logo">❄️ Snowflake</span>
+
+          <!-- Google Cloud Technology -->
+          <div class="partner-item-card gcp-technology-partner reveal-card">
+            <div class="partner-card-glow-color color-gcp-tech"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box gcp-box">
+                <img src="/images/logos/tier_gcp_technology_select.png" alt="Google Cloud Technology Partner Select" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">Google Cloud</h4>
+                <p class="partner-desc">Technology Partner (Select Tier)</p>
+              </div>
+            </div>
           </div>
-          <div class="partner-item">
-            <span class="logo-dummy databricks-logo">🧱 Databricks</span>
+
+          <!-- Google Cloud Co-Sell -->
+          <div class="partner-item-card gcp-cosell-partner reveal-card">
+            <div class="partner-card-glow-color color-gcp-cosell"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box gcp-box">
+                <img src="/images/logos/tier_gcp_cosell_select.png" alt="Google Cloud Co-Sell Partner Select" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">Google Cloud</h4>
+                <p class="partner-desc">Co-Sell Partner (Select Tier)</p>
+              </div>
+            </div>
           </div>
-          <div class="partner-item">
-            <span class="logo-dummy opentext-logo">📝 OpenText</span>
+
+          <!-- Snowflake -->
+          <div class="partner-item-card snowflake-partner reveal-card">
+            <div class="partner-card-glow-color color-snowflake"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box bg-snowflake-logo">
+                <img src="/images/logos/snowflake_logo.svg" alt="Snowflake Logo" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">Snowflake</h4>
+                <p class="partner-desc">Data Cloud & Warehousing</p>
+              </div>
+            </div>
           </div>
+
+          <!-- Databricks -->
+          <div class="partner-item-card databricks-partner reveal-card">
+            <div class="partner-card-glow-color color-databricks"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box bg-databricks-logo">
+                <img src="/images/logos/databricks_logo.svg" alt="Databricks Logo" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">Databricks</h4>
+                <p class="partner-desc">Lakehouse & AI Compute</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- OpenText -->
+          <div class="partner-item-card opentext-partner reveal-card">
+            <div class="partner-card-glow-color color-opentext"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box bg-opentext-logo">
+                <img src="/images/logos/opentext_logo.svg" alt="OpenText Logo" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">OpenText</h4>
+                <p class="partner-desc">Information Management Partner</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fiddler AI -->
+          <div class="partner-item-card fiddler-partner reveal-card">
+            <div class="partner-card-glow-color color-fiddler"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box bg-fiddler-logo">
+                <img src="/images/logos/fiddler_logo.svg" alt="Fiddler AI Logo" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">Fiddler AI</h4>
+                <p class="partner-desc">AI Observability & ML Monitoring</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- NeuAlto -->
+          <div class="partner-item-card neualto-partner reveal-card">
+            <div class="partner-card-glow-color color-neualto"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box bg-neualto-logo-box">
+                <img src="/images/logos/neualto_technologies_pvt_ltd_logo.jpg" alt="NeuAlto Logo" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">NeuAlto</h4>
+                <p class="partner-desc">Managed AI & Cloud Services</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Datadvise -->
+          <div class="partner-item-card datadvise-partner reveal-card">
+            <div class="partner-card-glow-color color-datadvise"></div>
+            <div class="partner-card-content vertical-layout">
+              <div class="partner-card-logo-box bg-datadvise-logo">
+                <img src="/images/logos/datadvise_logo.png" alt="Datadvise Logo" class="partner-card-logo-image">
+              </div>
+              <div class="partner-details text-center">
+                <h4 class="partner-title">Datadvise</h4>
+                <p class="partner-desc">Strategic Data & Market Insights</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -305,6 +366,11 @@
               <span class="tab-badge">Strategic</span>
               <strong>OptiMax</strong>
               <span>Revenue Strategy Framework</span>
+            </button>
+            <button class="tab-btn" data-target="pmomax-showcase">
+              <span class="tab-badge">AI Agent</span>
+              <strong>PMO-Max</strong>
+              <span>PID Architect Automation</span>
             </button>
           </div>
 
@@ -488,6 +554,89 @@
               </div>
             </div>
 
+            <!-- PMO-Max Showcase -->
+            <div class="tab-content" id="pmomax-showcase">
+              <div class="solution-grid">
+                <div class="solution-info">
+                  <h3 class="solution-headline">PMO-Max <span class="badge-status type-pmo">PID Architect</span></h3>
+                  <p class="solution-intro">
+                    An intelligent workspace automation engine for engineering PMO workflows. PMO-Max optimizes piping & instrumentation diagrams (P&IDs), automates metadata extraction, and maps workspace dependencies to streamline industrial and corporate execution.
+                  </p>
+                  
+                  <div class="features-list">
+                    <div class="feature-item-inline">
+                      <span class="f-icon">📐</span>
+                      <div>
+                        <strong>PID Architecture Design:</strong>
+                        <span>Automated schematics parsing and metadata alignment for complex asset deployments.</span>
+                      </div>
+                    </div>
+                    <div class="feature-item-inline">
+                      <span class="f-icon">📁</span>
+                      <div>
+                        <strong>Workspace Automation:</strong>
+                        <span>Organizes multi-tenant engineering designs, document libraries, and compliance checks dynamically.</span>
+                      </div>
+                    </div>
+                    <div class="feature-item-inline">
+                      <span class="f-icon">⚡</span>
+                      <div>
+                        <strong>Real-time Validation:</strong>
+                        <span>Ensures all drawing revisions and asset data points reconcile perfectly across project stakeholders.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="solution-actions">
+                    <a href="https://pmoagent.katalyststreet.com/" target="_blank" class="btn btn-primary">Launch PMO-Max Agent</a>
+                    <a href="#contact" class="btn btn-outline">Request Integration Guide</a>
+                  </div>
+                </div>
+
+                <div class="solution-demo">
+                  <div class="glass-card demo-card pmo-preview-card">
+                    <div class="demo-header">
+                      <div class="demo-controls">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                      </div>
+                      <span class="demo-title">PMO-Max Pipeline Diagnostics</span>
+                    </div>
+                    <div class="demo-body opt-matrix-body">
+                      <!-- Simulated PMO agent dashboard -->
+                      <div class="opt-matrix-container">
+                        <div class="matrix-item">
+                          <span class="matrix-title">Schematic Parsing Rate</span>
+                          <div class="matrix-progress"><div class="progress-bar pmo-progress" style="width: 97%;"></div></div>
+                          <span class="matrix-val">97% Extraction Accuracy</span>
+                        </div>
+                        <div class="matrix-item">
+                          <span class="matrix-title">Document Sync Delay</span>
+                          <div class="matrix-progress"><div class="progress-bar pmo-progress" style="width: 8%;"></div></div>
+                          <span class="matrix-val">Optimal (&lt; 2s latency)</span>
+                        </div>
+                        <div class="matrix-item">
+                          <span class="matrix-title">Active Projects Managed</span>
+                          <div class="matrix-progress"><div class="progress-bar pmo-progress" style="width: 75%;"></div></div>
+                          <span class="matrix-val">12 Industrial Units</span>
+                        </div>
+                      </div>
+                      <div class="matrix-graph-placeholder">
+                        <svg viewBox="0 0 200 80" class="mini-bar-chart">
+                          <rect x="10" y="20" width="20" height="60" rx="3" fill="#0D9488"/>
+                          <rect x="40" y="30" width="20" height="50" rx="3" fill="#06B6D4"/>
+                          <rect x="70" y="10" width="20" height="70" rx="3" fill="#4F46E5"/>
+                          <rect x="100" y="45" width="20" height="35" rx="3" fill="#10B981"/>
+                          <rect x="130" y="15" width="20" height="65" rx="3" fill="#6366F1"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -499,7 +648,7 @@
       <div class="container">
         <div class="section-header text-center">
           <div class="badge">Actionable Execution Framework</div>
-          <h2 class="section-title">The Katalyst Path</h2>
+          <h2 class="section-title"> The Process </h2>
           <p class="section-description">
             Reducing IT complexity is not a single audit; it is a systematic refinement process that bridges C-suite strategic goals with robust technical execution.
           </p>
@@ -621,45 +770,71 @@
           </p>
         </div>
 
-        <div class="grid grid-3">
-          <!-- Article 1 -->
-          <article class="glass-card blog-card reveal-card">
-            <div class="blog-meta">
-              <span class="blog-date">May 15, 2026</span>
-              <span class="blog-read">5 Min Read</span>
+        <div class="insights-split-container">
+          <!-- Featured White Papers -->
+          <div class="insights-subsection-wrapper">
+            <h3 class="insights-subsection-title">Featured White Papers</h3>
+            <div class="grid grid-2" id="home-whitepapers-grid">
+              <!-- Dynamically populated via javascript -->
             </div>
-            <h3 class="blog-title">Taming the "Unknown-Unknowns" in Multi-Period Ingestion Pipelines</h3>
-            <p class="blog-excerpt">
-              Rule-based schema validations are no longer sufficient. Discover how machine-learning drift detection and population stability indexing identify stealth anomalies before they corrupt downstream analytical dashboards...
-            </p>
-            <button class="btn-text open-modal-btn" data-modal="blog-1">Read Article →</button>
-          </article>
+          </div>
 
-          <!-- Article 2 -->
-          <article class="glass-card blog-card reveal-card">
-            <div class="blog-meta">
-              <span class="blog-date">April 28, 2026</span>
-              <span class="blog-read">6 Min Read</span>
+          <!-- Blogs & Strategy Notes -->
+          <div class="insights-subsection-wrapper mt-50">
+            <h3 class="insights-subsection-title">Blogs & Strategy Notes</h3>
+            <div class="grid grid-3" id="home-blogs-grid">
+              <!-- Dynamically populated via javascript -->
             </div>
-            <h3 class="blog-title">A CEO's Blueprint to Overcoming Enterprise IT Complexity</h3>
-            <p class="blog-excerpt">
-              IT complexity acts as a direct tax on operational agility. We map the critical strategic steps needed to bridge localized database friction with high-level corporate performance metrics...
-            </p>
-            <button class="btn-text open-modal-btn" data-modal="blog-2">Read Article →</button>
-          </article>
+          </div>
+        </div>
 
-          <!-- Article 3 -->
-          <article class="glass-card blog-card reveal-card">
-            <div class="blog-meta">
-              <span class="blog-date">March 12, 2026</span>
-              <span class="blog-read">8 Min Read</span>
+        <div class="text-center mt-40 reveal-card">
+          <a href="./blog.html" class="btn btn-primary">View All Strategic Insights</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section id="team" class="team-section section-padding background-alt">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge">Enterprise Leadership</div>
+          <h2 class="section-title">Leadership Team</h2>
+          <p class="section-description">
+            Partnering with C-suite executives to tame IT friction and architect high-performance, compliant enterprise AI systems.
+          </p>
+        </div>
+
+        <div class="grid grid-2 team-grid">
+          <!-- Team Card 1 - Rajesh -->
+          <div class="glass-card team-card reveal-card">
+            <div class="team-avatar-wrapper">
+              <img src="/images/team/rajesh.jpg" alt="Rajesh Koppula" class="team-avatar-img">
+              <a href="https://www.linkedin.com/in/rajeshkoppula" target="_blank" class="team-social-btn" aria-label="Rajesh Koppula LinkedIn">
+                <svg class="li-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
             </div>
-            <h3 class="blog-title">Integrating Vertex AI and Gemini Models Safely Within Corporate VPCs</h3>
-            <p class="blog-excerpt">
-              Regulatory compliance is the primary barrier to generative AI adoption. We examine practical deployment patterns that utilize private Google Cloud environments to safely leverage LLMs...
+            <h3 class="team-name">Rajesh Koppula</h3>
+            <p class="team-role">CEO & Managing Partner</p>
+            <p class="team-bio">
+              Over 22 years of enterprise leadership managing massive scale payment architectures and high-friction database systems. Holds double MBAs from Columbia Business School and London Business School.
             </p>
-            <button class="btn-text open-modal-btn" data-modal="blog-3">Read Article →</button>
-          </article>
+          </div>
+
+          <!-- Team Card 2 - Andrew -->
+          <div class="glass-card team-card reveal-card">
+            <div class="team-avatar-wrapper">
+              <img src="/images/team/andrew.jpg" alt="Andrew Igharo" class="team-avatar-img">
+              <a href="https://www.linkedin.com/in/andrewigharo" target="_blank" class="team-social-btn" aria-label="Andrew Igharo LinkedIn">
+                <svg class="li-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+            </div>
+            <h3 class="team-name">Andrew Igharo</h3>
+            <p class="team-role">Partner, AI Strategy & Execution</p>
+            <p class="team-bio">
+              Venture builder, tech strategist, and former Investment Banking Vice President at Wells Fargo. Focused on shifting systems from rigid documentation to secure, autonomous agentic workflows.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -757,44 +932,8 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="logo">
-          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4F46E5"/>
-            <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span class="logo-text">Katalyst <span class="accent-text">Street</span></span>
-        </div>
-        <p class="footer-tagline">Taming IT Complexity. Building the AI Future.</p>
-      </div>
-      <div class="footer-links">
-        <div class="link-group">
-          <h4>Navigation</h4>
-          <a href="#home">Home</a>
-          <a href="#services">What We Do</a>
-          <a href="#solutions">Solutions</a>
-          <a href="#approach">Our Approach</a>
-        </div>
-        <div class="link-group">
-          <h4>Resources</h4>
-          <a href="#customers">Customers</a>
-          <a href="#insights">Insights</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="link-group">
-          <h4>Partner Context</h4>
-          <a href="https://console.cloud.google.com/marketplace?hl=en" target="_blank">GCP Marketplace</a>
-          <a href="https://www.linkedin.com/company/96600014/" target="_blank">LinkedIn Profile</a>
-        </div>
-      </div>
-    </div>
-    <div class="container footer-copy">
-      <p>&copy; 2026 by Katalyst Street, Inc. All rights reserved.</p>
-    </div>
-  </footer>
+  <!-- Footer (Populated via JS) -->
+  <footer class="site-footer"></footer>
 
   <!-- Toast Notification System -->
   <div id="toast-notification" class="toast-notification hidden">
@@ -813,6 +952,6 @@
   </div>
 
   <!-- Client-side Logic Script -->
-  <script type="module" src="./index.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>

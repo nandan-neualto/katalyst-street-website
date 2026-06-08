@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategic Insights & Advisory | Katalyst Street</title>
+  <meta name="description" content="Explore advanced technical analysis and corporate strategy blueprints written by our leadership team including Rajesh Koppula and Andrew Igharo. Topics cover AI, cloud pipelines, and FinOps optimization.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/2a4917_f1a284b9ea744d8caed27cbc2d0498f5~mv2.png/v1/fill/w_32,h_32/2a4917_f1a284b9ea744d8caed27cbc2d0498f5~mv2.png">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core CSS Bundle -->
+  <link rel="stylesheet" href="./styles/blog-entry.css">
+</head>
+<body class="blog-body-class">
+
+  <!-- Background Decorative Blurs -->
+  <div class="glow-bg glow-bg-1"></div>
+  <div class="glow-bg glow-bg-2"></div>
+  <div class="glow-bg glow-bg-3"></div>
+
+  <!-- Navigation Bar (Populated via JS) -->
+  <header class="navbar" id="main-nav"></header>
+
+  <!-- Dedicated Blog Main Content -->
+  <main class="blog-main-wrapper container">
+    
+    <!-- Blog Hero Section -->
+    <header class="blog-hero">
+      <div class="mini-badge fade-in-up active">Thought Leadership</div>
+      <h1 class="blog-hero-title fade-in-up active">Strategic <span class="gradient-text">Insights</span></h1>
+      <p class="blog-hero-desc fade-in-up active">
+        Deep technical research, leadership blueprints, and FinOps guides to help you navigate data architectures and secure generative AI pipelines.
+      </p>
+    </header>
+
+    <!-- Search and Filter Bar -->
+    <section class="blog-filter-section fade-in-up active">
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="blog-search-input" placeholder="Search by keywords, author, or topics..." aria-label="Search blog posts">
+      </div>
+      
+      <!-- Category Pills -->
+      <div class="category-pills" id="category-pills-container">
+        <button class="pill active" data-category="All">All Topics</button>
+        <button class="pill" data-category="Drift Analysis">Drift Analysis</button>
+        <button class="pill" data-category="Executive Advisory">Executive Advisory</button>
+        <button class="pill" data-category="Cloud Security">Cloud Security</button>
+      </div>
+    </section>
+
+    <!-- Skeletal Loading Placeholder Grid -->
+    <section class="blog-loading-grid" id="blog-loading-grid">
+      <div class="glass-card skeleton-card">
+        <div class="skeleton skeleton-img"></div>
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-meta"></div>
+      </div>
+      <div class="glass-card skeleton-card">
+        <div class="skeleton skeleton-img"></div>
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-meta"></div>
+      </div>
+      <div class="glass-card skeleton-card">
+        <div class="skeleton skeleton-img"></div>
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-meta"></div>
+      </div>
+    </section>
+
+    <!-- Dynamic Blog Container -->
+    <div id="blog-content-wrapper" class="hidden">
+      <!-- Section 1: Featured White Papers -->
+      <section class="blog-section-container" id="whitepapers-section">
+        <h2 class="blog-section-title">Featured White Papers</h2>
+        <div class="blog-posts-grid grid-2" id="blog-whitepapers-grid">
+          <!-- Injected via JavaScript -->
+        </div>
+      </section>
+
+      <!-- Section 2: Blogs & Strategy Notes -->
+      <section class="blog-section-container" id="blogs-section">
+        <h2 class="blog-section-title">Blogs & Strategy Notes</h2>
+        <div class="blog-posts-grid" id="blog-blogs-grid">
+          <!-- Injected via JavaScript -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Empty State -->
+    <section class="blog-empty-state hidden" id="blog-empty-state">
+      <span class="empty-icon">📂</span>
+      <h3>No insights found</h3>
+      <p>We couldn't find any articles matching your search query. Try adjusting your keywords or category filters.</p>
+      <button class="btn btn-primary" id="reset-blog-filters">View All Articles</button>
+    </section>
+
+  </main>
+
+  <!-- Footer (Populated via JS) -->
+  <footer class="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script type="module" src="./src/blog.js"></script>
+</body>
+</html>

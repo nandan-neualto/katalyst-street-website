@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategic Insight Reader | Katalyst Street</title>
+  <meta name="description" content="Read full professional publications, tech reports, and system optimization guides published by Katalyst Street.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/2a4917_f1a284b9ea744d8caed27cbc2d0498f5~mv2.png/v1/fill/w_32,h_32/2a4917_f1a284b9ea744d8caed27cbc2d0498f5~mv2.png">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core CSS Bundle -->
+  <link rel="stylesheet" href="./styles/blog-post-entry.css">
+</head>
+<body class="blog-body-class">
+
+  <!-- Viewport Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="reading-progress"></div>
+  </div>
+
+  <!-- Background Decorative Blurs -->
+  <div class="glow-bg glow-bg-1"></div>
+  <div class="glow-bg glow-bg-2"></div>
+  <div class="glow-bg glow-bg-3"></div>
+
+  <!-- Navigation Bar (Populated via JS) -->
+  <header class="navbar" id="main-nav"></header>
+
+  <!-- Post Content Main Area -->
+  <main class="reader-main-wrapper container">
+    
+    <!-- Navigation Back Link -->
+    <div class="reader-navigation-top">
+      <a href="./blog.html" class="btn-back-link">← Back to Strategic Insights</a>
+    </div>
+
+    <!-- Post Article Wrapper -->
+    <article class="glass-card post-reader-card" id="post-reader-card">
+      
+      <!-- Skeletal Reader Placeholder -->
+      <div id="post-reader-skeleton">
+        <div class="skeleton skeleton-tag"></div>
+        <div class="skeleton skeleton-title-large"></div>
+        <div class="skeleton skeleton-meta-row"></div>
+        <div class="skeleton skeleton-banner-img"></div>
+        <div class="skeleton skeleton-body-paragraph"></div>
+        <div class="skeleton skeleton-body-paragraph"></div>
+      </div>
+
+      <!-- Live Dynamic Post Layout -->
+      <div id="post-reader-content" class="hidden">
+        <span class="reader-post-tag" id="post-category">Category</span>
+        <h1 class="reader-post-title" id="post-title">Article Headline</h1>
+        
+        <!-- Author Profile Header -->
+        <div class="reader-author-header">
+          <img src="" alt="" class="author-header-avatar" id="post-author-avatar">
+          <div class="author-header-meta">
+            <strong class="author-header-name" id="post-author-name">Author Name</strong>
+            <span class="author-header-role" id="post-author-role">Author Position</span>
+          </div>
+          <div class="post-time-meta">
+            <span id="post-date">Publish Date</span>
+            <span class="meta-dot">•</span>
+            <span id="post-readtime">Reading Time</span>
+          </div>
+        </div>
+
+        <!-- Post Hero Banner -->
+        <div class="post-hero-banner-wrapper">
+          <img src="" alt="" class="post-hero-banner-img" id="post-hero-image">
+        </div>
+
+        <!-- Article Editorial Body -->
+        <div class="post-editorial-body" id="post-body-content">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- PDF Viewer and Downloader Section -->
+        <div id="pdf-viewer-section" class="pdf-viewer-section hidden">
+          <div class="pdf-viewer-header">
+            <h3>📄 Official White Paper Document</h3>
+            <div class="pdf-viewer-actions">
+              <a href="" id="pdf-download-btn" download class="btn btn-primary">
+                📥 Download PDF
+              </a>
+              <a href="" id="pdf-view-btn" target="_blank" class="btn btn-secondary">
+                🌐 View Full Screen
+              </a>
+            </div>
+          </div>
+          <div class="pdf-iframe-container">
+            <iframe src="" id="pdf-iframe" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+          </div>
+        </div>
+
+        <!-- Reader Footer Features -->
+        <footer class="reader-post-footer">
+          <div class="share-title">Enjoyed the research? Share with your team:</div>
+          <div class="share-actions-row">
+            <button class="btn btn-secondary share-btn-copy" id="share-copy-url">
+              <span class="share-icon">🔗</span> Copy Link
+            </button>
+            <a href="#" target="_blank" class="btn btn-secondary share-btn-li" id="share-linkedin">
+              <span class="share-icon">💼</span> Share on LinkedIn
+            </a>
+            <a href="#" target="_blank" class="btn btn-secondary share-btn-fb" id="share-facebook">
+              <span class="share-icon">🔵</span> Share on Facebook
+            </a>
+            <a href="#" target="_blank" class="btn btn-secondary share-btn-tw" id="share-twitter">
+              <span class="share-icon">𝕏</span> Share on X
+            </a>
+          </div>
+        </footer>
+
+      </div>
+    </article>
+
+    <!-- Error State -->
+    <div class="blog-empty-state hidden" id="post-error-state">
+      <span class="empty-icon">⚠️</span>
+      <h3>Article not found</h3>
+      <p>We couldn't retrieve the specified article. The link may have changed, or the post was removed from our repository.</p>
+      <a href="./blog.html" class="btn btn-primary">Return to Insights</a>
+    </div>
+
+  </main>
+
+  <!-- Footer (Populated via JS) -->
+  <footer class="site-footer"></footer>
+
+  <!-- Toast Notification System -->
+  <div id="toast-notification" class="toast-notification hidden">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message-text">URL copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="./src/blog-post.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/*
+ * Katalyst Street Redesign CSS System
+ * Aesthetics: Premium Bright Glassmorphism, Harmonious Indigo/Teal/Cyan Gradients, Sleek Micro-animations.
+ */
+
+:root {
+  --canvas-bg: #F8FAFC;
+  --surface-white: #FFFFFF;
+  
+  /* Brand Color Tokens */
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --primary-light: #EEF2F6;
+  --accent-teal: #0D9488;
+  --accent-cyan: #06B6D4;
+  --accent-indigo-rgb: 79, 70, 229;
+  
+  /* Text Contrast Tokens */
+  --text-main: #0F172A;
+  --text-body: #334155;
+  --text-muted: #64748B;
+  --border-light: #E2E8F0;
+  
+  /* Premium Glassmorphic Settings */
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-shadow: 0 15px 40px -12px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+  --glass-shadow-hover: 0 25px 50px -15px rgba(15, 23, 42, 0.12), 0 8px 16px -4px rgba(15, 23, 42, 0.04);
+  
+  /* Fonts */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Global Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-body);
+  background-color: var(--canvas-bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Typography Details */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-main);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+/* Background Decorative elements */
+.glow-bg {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.45;
+  animation: glow-float 20s infinite alternate ease-in-out;
+}
+
+.glow-bg-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99,102,241,0.2) 0%, rgba(255,255,255,0) 70%);
+  top: -100px;
+  right: -50px;
+}
+
+.glow-bg-2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, rgba(255,255,255,0) 70%);
+  bottom: 20%;
+  left: -200px;
+  animation-delay: -5s;
+}
+
+.glow-bg-3 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(13,148,136,0.1) 0%, rgba(255,255,255,0) 70%);
+  bottom: -100px;
+  right: 10%;
+  animation-delay: -10s;
+}
+
+/* Utility Containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.background-alt {
+  background-color: #F1F5F9;
+  position: relative;
+}
+
+.background-alt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99,102,241,0.1), transparent);
+}
+
+.grid {
+  display: grid;
+  gap: 32px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.hidden {
+  display: none !important;
+}
